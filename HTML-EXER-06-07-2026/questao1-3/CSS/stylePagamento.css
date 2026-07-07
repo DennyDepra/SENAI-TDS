@@ -1,0 +1,116 @@
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Caixa do formulário */
+form {
+    background: #fff;
+    width: 650px;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #02662b;
+    margin-bottom: 25px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 12px 8px;
+    vertical-align: middle;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Campos */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: .3s;
+}
+
+/* Foco */
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: #02662b;
+    box-shadow: 0 0 8px rgba(2,102,43,.3);
+}
+
+/* Área das bandeiras */
+.bandeiras {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Rádio */
+.bandeiras input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Logos */
+.bandeiras label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bandeiras img {
+    width: 65px;
+    transition: .3s;
+}
+
+.bandeiras img:hover {
+    transform: scale(1.1);
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #02662b;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #03853a;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão Acadêmica</title>
+    <link rel="stylesheet" href="CSS/styleIndex.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="titulo">
+        <h1>SISTEMA DE GESTÃO ACADÊMICA</h1>
+    </div>
+
+    <h2>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h2>
+
+    <form>
+
+        <div class="linha">
+            <label for="login">Login</label>
+            <input type="text" id="login">
+        </div>
+
+        <div class="linha">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha">
+        </div>
+
+        <div class="linha">
+            <label for="status">Status</label>
+            <select id="status">
+                <option>Ativo</option>
+                <option>Inativo</option>
+            </select>
+        </div>
+
+        <div class="linha">
+            <label>Tipo</label>
+
+            <div class="grupo">
+                <label><input type="radio" name="tipo"> Técnico</label>
+
+                <label><input type="radio" name="tipo"> Professor</label>
+
+                <label><input type="radio" name="tipo"> Aluno</label>
+            </div>
+        </div>
+
+        <div class="linha">
+            <label for="data">Data Criação</label>
+            <input type="date" id="data">
+        </div>
+
+        <div class="linha">
+            <label>Perfil</label>
+
+            <div class="grupo">
+                <label><input type="radio" name="perfil"> Convidado</label>
+
+                <label><input type="radio" name="perfil"> Administrador</label>
+            </div>
+        </div>
+
+        <div class="linha">
+            <label for="obs">Observações</label>
+            <textarea id="obs" rows="6"></textarea>
+        </div>
+
+        <div class="linha">
+            <label>Módulos</label>
+
+            <div class="modulos">
+
+                <label><input type="checkbox"> Compras</label>
+
+                <label><input type="checkbox"> Biblioteca</label>
+
+                <label><input type="checkbox"> Acadêmico</label>
+
+                <label><input type="checkbox"> Documentação</label>
+
+                <label><input type="checkbox"> Recursos Humanos</label>
+
+            </div>
+        </div>
+
+        <div class="botoes">
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Excluir</button>
+        </div>
+
+    </form>
+
+    <p class="obs">
+        <strong>Obs:</strong> O uso da tag &lt;label&gt; é obrigatório para todos os campos.
+    </p>
+
+</div>
+
+</body>
+</html>

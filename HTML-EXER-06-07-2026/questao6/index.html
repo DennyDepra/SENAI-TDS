@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pré-Matrícula</title>
+    <link rel="stylesheet" href="/questao6/CSS/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Escola Virtual</h1>
+    <h2>Formulário de Pré-Matrícula</h2>
+
+    <form>
+
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+
+            <div class="linha">
+                <label for="aluno">Nome do Aluno:</label>
+                <input type="text" id="aluno">
+            </div>
+
+            <div class="linha">
+                <label>Nascimento (dd/mm/aaaa):</label>
+
+                <input type="text" maxlength="2" class="data">
+                /
+                <input type="text" maxlength="2" class="data">
+                /
+                <input type="text" maxlength="4" class="ano">
+            </div>
+
+            <div class="linha">
+                <label for="mae">Nome da Mãe:</label>
+                <input type="text" id="mae">
+            </div>
+
+            <div class="linha">
+                <label for="pai">Nome do Pai:</label>
+                <input type="text" id="pai">
+            </div>
+
+            <div class="linha">
+                <label>Telefone:</label>
+
+                <span>DDD</span>
+                <input type="text" maxlength="2" class="ddd">
+
+                <span>Tel</span>
+                <input type="text" class="telefone">
+
+                <span>Ramal</span>
+                <input type="text" class="ramal">
+            </div>
+
+            <div class="linha">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email">
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Informações de Matrícula:</legend>
+
+            <div class="matricula">
+
+                <div>
+
+                    <label for="serie">Série:</label>
+
+                    <select id="serie">
+                        <option>Pré-escolar</option>
+                        <option>1º Ano</option>
+                        <option>2º Ano</option>
+                        <option>3º Ano</option>
+                        <option>4º Ano</option>
+                        <option>5º Ano</option>
+                    </select>
+
+                </div>
+
+                <div>
+
+                    <label>Turno:</label>
+
+                    <label><input type="radio" name="turno"> Manhã</label>
+
+                    <label><input type="radio" name="turno"> Tarde</label>
+
+                </div>
+
+                <div>
+
+                    <label>Atividades Extracurriculares:</label>
+
+                    <label><input type="checkbox"> Informática</label>
+
+                    <label><input type="checkbox"> Música</label>
+
+                    <label><input type="checkbox"> Balet</label>
+
+                    <label><input type="checkbox"> Pintura</label>
+
+                    <label><input type="checkbox"> Judô</label>
+
+                    <label><input type="checkbox"> Futebol</label>
+
+                </div>
+
+            </div>
+
+        </fieldset>
+
+        <div class="botoes">
+            <button type="submit">Envia Formulário</button>
+            <button type="reset">Limpa Campos</button>
+        </div>
+
+    </form>
+
+    <p class="obs">
+        <strong>Obs:</strong> O uso da tag &lt;label&gt; é obrigatório para todos os campos.
+    </p>
+
+</div>
+
+</body>
+</html>

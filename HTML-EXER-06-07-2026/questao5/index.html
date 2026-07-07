@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="/questao5/CSS/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="cabecalho">
+        <div class="claro">Não é associado? Faça seu cadastro</div>
+        <div class="escuro"></div>
+    </div>
+
+    <form>
+
+        <div class="linha">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome">
+        </div>
+
+        <div class="linha">
+            <label for="nomeCompleto">Nome Completo</label>
+            <input type="text" id="nomeCompleto">
+        </div>
+
+        <div class="linha">
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf">
+        </div>
+
+        <div class="linha">
+            <label for="email">E-mail</label>
+            <input type="email" id="email">
+        </div>
+
+        <div class="linha">
+            <label for="site">WebSite</label>
+            <input type="url" id="site">
+        </div>
+
+        <div class="linha">
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco">
+        </div>
+
+        <div class="dupla">
+
+            <div>
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro">
+            </div>
+
+            <div>
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade">
+            </div>
+
+        </div>
+
+        <div class="tripla">
+
+            <div>
+                <label for="cep">CEP</label>
+                <input type="text" id="cep">
+            </div>
+
+            <div>
+                <label for="uf">UF</label>
+
+                <select id="uf">
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                </select>
+
+            </div>
+
+        </div>
+
+        <div class="dupla">
+
+            <div>
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone">
+            </div>
+
+            <div>
+                <label for="fax">Fax</label>
+                <input type="text" id="fax">
+            </div>
+
+        </div>
+
+        <div class="tripla">
+
+            <div>
+                <label for="data">Data Nascimento</label>
+                <input type="date" id="data">
+            </div>
+
+            <div>
+                <label>Sexo</label>
+
+                <label><input type="radio" name="sexo"> M</label>
+                <label><input type="radio" name="sexo"> F</label>
+
+            </div>
+
+        </div>
+
+        <div class="dupla">
+
+            <div>
+                <label for="celular">Celular</label>
+                <input type="text" id="celular">
+            </div>
+
+            <div>
+
+                <label for="estadoCivil">Est. Civil</label>
+
+                <select id="estadoCivil">
+                    <option>Solteiro</option>
+                    <option>Casado</option>
+                    <option>Viúvo</option>
+                    <option>Divorciado</option>
+                </select>
+
+            </div>
+
+        </div>
+
+        <div class="dupla">
+
+            <div>
+                <label for="login">Login</label>
+                <input type="text" id="login">
+            </div>
+
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha">
+            </div>
+
+        </div>
+
+        <p><strong>Deseja receber informações sobre os seguintes assuntos abaixo:</strong></p>
+
+        <div class="checkboxes">
+
+            <label><input type="checkbox"> Tecnologia</label>
+            <label><input type="checkbox"> Esportes</label>
+            <label><input type="checkbox"> Automóveis</label>
+            <label><input type="checkbox"> Culinária</label>
+            <label><input type="checkbox"> Política</label>
+            <label><input type="checkbox"> Policial</label>
+            <label><input type="checkbox"> Tempo</label>
+            <label><input type="checkbox"> Cultura</label>
+            <label><input type="checkbox"> Economia</label>
+            <label><input type="checkbox"> Jogos</label>
+            <label><input type="checkbox"> Educação</label>
+            <label><input type="checkbox"> Viagem</label>
+            <label><input type="checkbox"> Empregos</label>
+            <label><input type="checkbox"> Moda e Estilo</label>
+
+        </div>
+
+        <div class="termos">
+            <label>
+                <input type="checkbox">
+                Li as regras de cadastro e autorizo a criação do usuário
+            </label>
+        </div>
+
+        <div class="botoes">
+            <button type="submit">Confirmar</button>
+            <button type="reset">Retornar</button>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>

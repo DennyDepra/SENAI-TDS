@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+    <link rel="stylesheet" href="CSS/styleCadastro.css">
+</head>
+
+<body>
+
+    <form>
+        <h1>FORMULÁRIO</h1>
+
+        <table>
+            <tr>
+                <td><label for="nome">Nome:</label></td>
+                <td><input type="text" id="nome" name="nome"></td>
+            </tr>
+
+            <tr>
+                <td><label>Sexo:</label></td>
+                <td>
+                    <input type="radio" id="fem" name="sexo" value="feminino" checked>
+                    <label for="fem">Feminino</label>
+
+                    <input type="radio" id="masc" name="sexo" value="masculino">
+                    <label for="masc">Masculino</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="escolaridade">Escolaridade:</label></td>
+                <td>
+                    <select id="escolaridade" name="escolaridade">
+                        <option>1º Grau</option>
+                        <option>2º Grau</option>
+                        <option>Superior</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <a href="/questao1-3/PRODUTO/prodCadastro.html">
+                        <button type="button">CADASTRAR</button>
+                    </a>
+                    
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

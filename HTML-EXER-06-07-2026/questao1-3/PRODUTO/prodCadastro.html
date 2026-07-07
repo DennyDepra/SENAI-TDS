@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+    <link rel="stylesheet" href="/questao1-3/CSS/styleProdCadas.css">
+</head>
+
+<body>
+
+    <form>
+        <h1>COMPRAS</h1>
+
+        <table>
+            <td><label for="produto">PRODUTO:</label></td>
+                <td>
+                    <select id="produto" onchange="adicionarProduto()">                 
+                    <option value="84">Aquário 84L</option>
+                    <option value="36">Aquário 36L</option>
+                    <option value="20">Aquário 20L</option>
+                </select>
+                </td>
+            </tr>
+             <tr>
+                <td><label>COMPLEMENTO:</label></td>
+                <td>
+                    <input type="radio" id="fem" name="sexo" value="feminino" checked>
+                    <label for="fem">Movel + Luminaria </label>
+
+                    <input type="radio" id="masc" name="sexo" value="masculino">
+                    <label for="masc">Luminaria</label>
+
+                    <input type="radio" id="masc" name="sexo" value="masculino">
+                    <label for="masc">Só o Vidro</label>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <label>
+                        <input type="checkbox" id="presente" name="presente">
+                        Entrega como Presente
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+    <td colspan="2">
+
+        <fieldset>
+            <legend>Informações do Aquário</legend>
+
+            <br>
+
+            <label>Ph do Aquário:</label>
+            <br>
+
+            <input type="radio" id="acido" name="ph" value="Ácido" checked>
+            <label for="acido">Ácido</label>
+
+            <input type="radio" id="alcalino" name="ph" value="Alcalino">
+            <label for="alcalino">Alcalino</label>
+
+
+            <br><br>
+
+
+            <fieldset>
+                <legend>Peixes</legend>
+
+                <br>
+
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" min="0">
+
+
+                <br><br>
+
+
+                <label for="especie">Espécie:</label>
+
+                <select id="especie" name="especie">
+                    <option>Espada</option>
+                    <option>Molinesia</option>
+                    <option>Plati</option>
+                </select>
+
+            </fieldset>
+
+
+            <br>
+
+
+            <label>Outros:</label>
+            <br>
+
+            <input type="checkbox" id="pedras" name="pedras">
+            <label for="pedras">Pedras</label>
+
+            <br>
+
+            <input type="checkbox" id="plantas" name="plantas">
+            <label for="plantas">Plantas</label>
+
+        </fieldset>
+
+    </td>
+</tr>
+            <tr>
+    <td colspan="2" style="text-align:center;">
+        <label for="lista"><strong>Lista de Compras</strong></label><br><br>
+
+         <textarea id="lista" name="lista" rows="8" cols="35"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="valor">Valor Total:</label>
+                </td>
+                <td>
+                    <input type="text" id="valor" name="valor" readonly value="R$ 0,00">
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <a href="/questao1-3/pagamento.html">
+                        <button type="button">CONCLUIR PEDIDO</button>
+                    </a>
+                    
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function adicionarProduto() 
+        {
+            let produto = document.getElementById("produto").value;
+            let lista = document.getElementById("lista");
+
+            if (produto != "") {
+                lista.value += produto + "\n";
+            }
+        }
+        </script>
+        <script>
+        let total = 0;
+
+        const produtos = {
+            "84": { nome: "Aquário 84L", preco: 850.00 },
+            "36": { nome: "Aquário 36L", preco: 450.00 },
+            "20": { nome: "Aquário 20L", preco: 250.00 }
+        };
+
+        function adicionarProduto() {
+
+            let codigo = document.getElementById("produto").value;
+
+            if (codigo == "") return;
+
+            let lista = document.getElementById("lista");
+            let valor = document.getElementById("valor");
+
+            // Evita adicionar o mesmo produto duas vezes
+            if (lista.value.includes(produtos[codigo].nome))
+                return;
+
+            lista.value += produtos[codigo].nome +
+                " - R$ " + produtos[codigo].preco.toFixed(2) + "\n";
+
+            total += produtos[codigo].preco;
+
+            valor.value = "R$ " + total.toFixed(2).replace(".", ",");
+        }
+        </script>
+</body>
+</html>

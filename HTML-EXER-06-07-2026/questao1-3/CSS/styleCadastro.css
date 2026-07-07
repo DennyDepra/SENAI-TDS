@@ -1,0 +1,83 @@
+/* Fundo da página */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Caixa do formulário */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 400px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Espaçamento */
+td {
+    padding: 10px;
+}
+
+/* Campos */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+/* Efeito ao clicar */
+input[type="text"]:focus,
+select:focus {
+    border-color: #4facfe;
+    outline: none;
+    box-shadow: 0 0 8px rgba(79,172,254,0.5);
+}
+
+/* Rádio */
+input[type="radio"] {
+    margin-left: 10px;
+}
+
+/* Botão */
+button {
+    background: #4facfe;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #008cff;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}

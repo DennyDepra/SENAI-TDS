@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+    <link rel="stylesheet" href="CSS/stylePagamento.css">
+</head>
+
+<body>
+
+    <form>
+        <h1>PAGAMENTO</h1>
+
+        <table>
+            <tr>
+
+
+                <td><label for="dadosCartao">NUMERO DO CARTÃO:</label></td>
+                <td><input type="text" id="dadosCartao" name="dadosCartao"></td>
+            </tr>
+                <tr>
+                <td><label>BANDEIRA:</label></td>
+                <td>
+                    <input type="radio" id="mastercard" name="bandeira" value="mastercard" checked>
+                        <label for="mastercard">
+                            <img src="IMG/mastercard.png" alt="Mastercard" width="70">
+                        </label>
+
+                    <input type="radio" id="visa" name="bandeira" value="visa">
+                        <label for="visa">
+                            <img src="IMG/visa.png" alt="Visa" width="70">
+                        </label>
+                    <input type="radio" id="amex" name="bandeira" value="amex">
+                        <label for="amex">
+                            <img src="IMG/american.png" alt="American Express" width="70">
+                        </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="validade">VALIDADE:</label></td>
+                <td>
+                    <select id="validade" name="validade">
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <button type="submit">CONCLUIR PAGAMENTO</button>
+                    
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

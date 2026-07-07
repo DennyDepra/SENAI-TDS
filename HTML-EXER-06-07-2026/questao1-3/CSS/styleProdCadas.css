@@ -1,0 +1,194 @@
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Caixa do formulário */
+form {
+    background: #fff;
+    width: 650px;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #02662b;
+    margin-bottom: 25px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 12px 8px;
+    vertical-align: middle;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Campos */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: .3s;
+}
+
+/* Foco */
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: #02662b;
+    box-shadow: 0 0 8px rgba(2,102,43,.3);
+}
+
+/* Área das bandeiras */
+.bandeiras {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Rádio */
+.bandeiras input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Logos */
+.bandeiras label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bandeiras img {
+    width: 65px;
+    transition: .3s;
+}
+
+.bandeiras img:hover {
+    transform: scale(1.1);
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #02662b;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #03853a;
+    transform: translateY(-2px);
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+label {
+    font-size: 18px;
+    color: #444;
+    cursor: pointer;
+}
+
+/* Área da lista */
+textarea {
+    width: 100%;
+    resize: none; /* impede redimensionar */
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Campo Valor Total */
+#valor {
+    width: 120px;
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Efeito ao clicar */
+textarea:focus,
+#valor:focus {
+    outline: none;
+    border-color: #02662b;
+    box-shadow: 0 0 8px rgba(2,102,43,.3);
+}
+
+fieldset {
+    border: 2px solid #bbb;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding: 0 8px;
+}
+
+fieldset label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 6px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin: 5px;
+}
+
+fieldset select {
+    width: 120px;
+    padding: 5px;
+    border-radius: 5px;
+}
